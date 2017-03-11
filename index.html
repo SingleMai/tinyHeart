@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>TinyHeart</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+    <style type="text/css">
+      body{
+        font-family: 'Baloo Bhaina', cursive;
+        padding-top: 10px;
+      }
+      h1{
+        text-align: center;
+        font-size: 3em;
+        margin-bottom: 0;
+        color: #1196EE;
+        text-shadow: 5px 2px 6px #00FFFF;
+      }
+      .all_bg{
+        width: 900px;
+        height: 600px;
+        margin: 0 auto;
+      }
+      #allcanvas{
+        position: relative;
+        width: 800px;
+        height: 600px;
+        margin: 0;
+      }
+      #can1,#can2{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      #can1{
+        z-index:1;
+      }
+      #can2{
+        z-index: 0;
+      }
+    </style>
+</head>
+<body>
+  <div class="all_bg">
+    <h1>Tiny Heart</h1>
+    <div id="allcanvas">
+        <canvas id="can1" width="900px" height="600px"></canvas>
+        <canvas id="can2" width="900px" height="600px"></canvas>
+    </div>
+    <script  type="text/javascript" src="js/main.js" ></script>
+    <script  type="text/javascript" src="js/commonFunctions.js"></script>
+    <script  type="text/javascript" src="js/background.js" ></script>
+    <script  type="text/javascript" src="js/ane.js" ></script>
+    <script  type="text/javascript" src="js/fruit.js" ></script>
+    <script  type="text/javascript" src="js/mom.js" ></script>
+    <script  type="text/javascript" src="js/collision.js" ></script>
+    <script  type="text/javascript" src="js/child.js" ></script>
+    <script  type="text/javascript" src="js/data.js" ></script>
+    <script  type="text/javascript" src="js/wave.js" ></script>
+    <script  type="text/javascript" src="js/kiss.js" ></script>
+    <script  type="text/javascript" src="js/dust.js" ></script>
+</body>
+</html>
