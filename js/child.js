@@ -46,14 +46,20 @@ Child.prototype.draw = function(){
   this.angle = lerpAngle(beta,this.angle,0.6);
 
   //childBodyCount
+  if(isStart){
   this.childBodyTime += deltaTime;
   if (this.childBodyTime > 300){
-    if(this.childBodyCount === 19){
-      data.gameOver = true;
-    }else{
-    this.childBodyCount = (this.childBodyCount+1);
+      if(this.childBodyCount === 19){
+        data.gameOver = true;
+        ele1.slideToggle("slow");
+        ele2.slideToggle("slow");
+        isStart = false;
+        this.childBodyCount = 0;
+      }else{
+      this.childBodyCount = (this.childBodyCount+1);
+      }
+      this.childBodyTime %= 300;
     }
-    this.childBodyTime %= 300;
   }
   //Eye
   this.childEyeTimer += deltaTime;

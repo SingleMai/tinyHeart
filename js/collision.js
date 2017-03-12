@@ -1,5 +1,5 @@
 function momFruitCollision(){
-  if(!data.gameOver){
+  if(!data.gameOver && isStart ){
     for (var i = 0 ; i < fruit.num ; i++ ){
       if (fruit.alive[i]){
         var l = calLength2(fruit.x[i],fruit.y[i],mom.x,mom.y);

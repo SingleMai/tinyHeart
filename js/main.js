@@ -4,6 +4,7 @@ var can1,can2,ctx1,ctx2;
 var deltaTime;
 var lastTime;
 var canWid,canHei;
+var isStart = false;
 
 var bgPic = new Image();
 var ane ;
